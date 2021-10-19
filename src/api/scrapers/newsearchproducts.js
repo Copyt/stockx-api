@@ -20,7 +20,7 @@ module.exports = async (query, options = {}) => {
             "sec-fetch-mode": "cors",
             "sec-fetch-site": "cross-site",
             "x-algolia-agent": "Algolia%20for%20JavaScript%20(4.9.1)%3B%20Browser",
-            "x-algolia-api-key": "Njg4YjI1NTNhMTAzMzRlZjc4N2UyZmVjNzU4ODY3ZWY1OGU5YmEzZDBkNGFkMzE0NWQzMmEwZjllOWNlOTZkY3ZhbGlkVW50aWw9MTYzNDQ4Mzk4OA==",
+            "x-algolia-api-key": "YTgxOWFlMmU1NmNjZjgwZTYxYmY1ODNhZDY3NjQ1NjMzNGI0NDQ0ZTQ1M2Y2MjkxY2VkYjJlODQ3YWM4YTcwZnZhbGlkVW50aWw9MTYzNDgzMjM0MQ==",
             "x-algolia-application-id": "XW7SBCT9V6"
         },
         body: `{\"params\":\"query=${encodeURIComponent(query)}&facets=*&filters=\"}`,
@@ -29,7 +29,7 @@ module.exports = async (query, options = {}) => {
         //jar: cookieJar
     });
 
-    checkRes(res);
+    // checkRes(res);
 
     const { body } = res;
 
