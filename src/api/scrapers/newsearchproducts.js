@@ -7,7 +7,7 @@ const fetchAPIKey = require('./fetchapikey');
 module.exports = async (query, options = {}) => {
     const { limit, proxy, userAgent, cookieJar } = options;
 
-    const apiKey = await fetchAPIKey(options);
+    // const apiKey = await fetchAPIKey(options);
 
     const res = await request({
         url: "https://xw7sbct9v6-dsn.algolia.net/1/indexes/products/query?x-algolia-agent=Algolia%20for%20JavaScript%20(4.9.1)%3B%20Browser",
@@ -20,7 +20,7 @@ module.exports = async (query, options = {}) => {
             "sec-fetch-mode": "cors",
             "sec-fetch-site": "cross-site",
             "x-algolia-agent": "Algolia%20for%20JavaScript%20(4.9.1)%3B%20Browser",
-            "x-algolia-api-key": apiKey,
+            "x-algolia-api-key": "Njg4YjI1NTNhMTAzMzRlZjc4N2UyZmVjNzU4ODY3ZWY1OGU5YmEzZDBkNGFkMzE0NWQzMmEwZjllOWNlOTZkY3ZhbGlkVW50aWw9MTYzNDQ4Mzk4OA==",
             "x-algolia-application-id": "XW7SBCT9V6"
         },
         body: `{\"params\":\"query=${encodeURIComponent(query)}&facets=*&filters=\"}`,
