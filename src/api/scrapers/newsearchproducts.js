@@ -29,7 +29,7 @@ module.exports = async (query, options = {}) => {
         //jar: cookieJar
     });
 
-    // checkRes(res);
+    checkRes(res);
 
     const { body } = res;
 
